@@ -4,4 +4,4 @@ Projekts "Drag N Drop", papildina iepriekš veidoto projektu.
 - [x] Pievienotas vairāk mašīnas
 - [x] Pievienoti vairāk skaņas efekti
 - [x] Izveidota sākuma aina
-- [] Izveidota beigu aina
+- [ ] Izveidota beigu aina
