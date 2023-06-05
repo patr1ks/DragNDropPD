@@ -72,6 +72,51 @@ public class NomesanasVieta : MonoBehaviour,
 								objektuSkripts.skanasKoAtskanot[3]);
 							break;
 
+					case "b2":
+						objektuSkripts.skanasAvots.PlayOneShot(
+							objektuSkripts.skanasKoAtskanot[4]);
+						break;
+
+					case "CementMasin":
+						objektuSkripts.skanasAvots.PlayOneShot(
+							objektuSkripts.skanasKoAtskanot[5]);
+						break;
+
+					case "e46":
+						objektuSkripts.skanasAvots.PlayOneShot(
+							objektuSkripts.skanasKoAtskanot[6]);
+						break;
+
+					case "e61":
+						objektuSkripts.skanasAvots.PlayOneShot(
+							objektuSkripts.skanasKoAtskanot[7]);
+						break;
+
+					case "Ekskavators":
+						objektuSkripts.skanasAvots.PlayOneShot(
+							objektuSkripts.skanasKoAtskanot[8]);
+						break;
+
+					case "Policija":
+						objektuSkripts.skanasAvots.PlayOneShot(
+							objektuSkripts.skanasKoAtskanot[9]);
+						break;
+
+					case "Traktors1":
+						objektuSkripts.skanasAvots.PlayOneShot(
+							objektuSkripts.skanasKoAtskanot[10]);
+						break;
+
+					case "Traktors5":
+						objektuSkripts.skanasAvots.PlayOneShot(
+							objektuSkripts.skanasKoAtskanot[11]);
+						break;
+
+					case "Ugunsdzeseji":
+						objektuSkripts.skanasAvots.PlayOneShot(
+							objektuSkripts.skanasKoAtskanot[12]);
+						break;
+
 						default:
 							Debug.Log("Tags nav definēts!");
 							break;
@@ -102,6 +147,60 @@ public class NomesanasVieta : MonoBehaviour,
                          GetComponent<RectTransform>().localPosition =
                          objektuSkripts.bussKoord;
                         break;
+
+				case "b2":
+					objektuSkripts.b2.
+					GetComponent<RectTransform>().localPosition =
+						objektuSkripts.b2Koord;
+					break;
+
+				case "CementMasin":
+					objektuSkripts.CementaMasina.
+					GetComponent<RectTransform>().localPosition =
+						objektuSkripts.CementaKoord;
+					break;
+
+				case "e46":
+					objektuSkripts.e46.
+					GetComponent<RectTransform>().localPosition =
+						objektuSkripts.e46Koord;
+					break;
+
+				case "e61":
+					objektuSkripts.e61.
+					GetComponent<RectTransform>().localPosition =
+						objektuSkripts.e61Koord;
+					break;
+
+				case "Ekskavators":
+					objektuSkripts.Ekskavators.
+					GetComponent<RectTransform>().localPosition =
+						objektuSkripts.EkskavatorsKoord;
+					break;
+
+				case "Policija":
+					objektuSkripts.Policija.
+					GetComponent<RectTransform>().localPosition =
+						objektuSkripts.PolicijaKoord;
+					break;
+
+				case "Traktors1":
+					objektuSkripts.Traktors1.
+					GetComponent<RectTransform>().localPosition =
+						objektuSkripts.Traktors1Koord;
+					break;
+
+				case "Traktors5":
+					objektuSkripts.Traktors5.
+					GetComponent<RectTransform>().localPosition =
+						objektuSkripts.Traktors5Koord;
+					break;
+
+				case "Ugunsdzeseji":
+					objektuSkripts.Ugunsdzeseji.
+					GetComponent<RectTransform>().localPosition =
+						objektuSkripts.UgunsdzesejiKoord;
+					break;
 
                     default:
                         Debug.Log("Tags nav definēts!");
