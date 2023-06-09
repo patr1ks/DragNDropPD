@@ -23,7 +23,7 @@ public class Beigas : MonoBehaviour {
 		Debug.Log (time);
 		if (!scene.status)
 			return;
-		if (objekti.NoliktasMasinas >= 12) {
+		if (objekti.NoliktasMasinas >= 1) {
 			scene.status = false;
 			EndScreen.SetActive (true);
 			izkartne.SetActive (true);
@@ -42,15 +42,17 @@ public class Beigas : MonoBehaviour {
 
 		if (time <= 150) {
 			zvaigzne1.SetActive (true);
-			zvaigzne2.SetActive (true);
-			zvaigzne3.SetActive (true);
+				zvaigzne2.SetActive (true);
+				zvaigzne3.SetActive (true);
 		}
 
 		if (time > 150 && time <= 240) {
 			zvaigzne1.SetActive (true);
 			zvaigzne2.SetActive (true);
+
 		} else {
 			zvaigzne1.SetActive (true);
+
 		}
 	}
 }
