@@ -6,26 +6,27 @@ using UnityEngine.UI;
 
 public class Beigas : MonoBehaviour {
 
-	public Objekti objekti;
 	public AinasMainisana scene;
+	public Objekti objekti;
 	public GameObject EndScreen;
 	public Text laiks;
 	public GameObject zvaigzne1;
 	public GameObject zvaigzne2;
 	public GameObject zvaigzne3;
-	//public GameObject izkartne;
+	public GameObject izkartne;
 	public float time = 0f;
 	string text;
 	TimeSpan t;
 
 
-	public void end(){
+	void Update(){
 		Debug.Log (time);
-		if (!scene.game)
+		if (!scene.status)
 			return;
 		if (objekti.NoliktasMasinas >= 12) {
-			scene.game = false;
+			scene.status = false;
 			EndScreen.SetActive (true);
+			izkartne.SetActive (true);
 			rezultats (time);
 			t = TimeSpan.FromSeconds (time);
 			text = string.Format ("{0}:{1}:{2}", ((int)t.TotalHours), t.Minutes, t.Seconds);

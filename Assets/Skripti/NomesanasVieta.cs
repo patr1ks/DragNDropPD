@@ -57,64 +57,76 @@ public class NomesanasVieta : MonoBehaviour,
 						GetComponent<RectTransform>().localScale;
 
 					switch (eventData.pointerDrag.tag) {
-						case "atkritumi":
-							objektuSkripts.skanasAvots.PlayOneShot(
-								objektuSkripts.skanasKoAtskanot[1]);
+					case "atkritumi":
+						objektuSkripts.skanasAvots.PlayOneShot (
+							objektuSkripts.skanasKoAtskanot [1]);
+							objektuSkripts.NoliktasMasinas++;
 							break;
 
 						case "atrie":
 							objektuSkripts.skanasAvots.PlayOneShot(
 								objektuSkripts.skanasKoAtskanot[2]);
+								objektuSkripts.NoliktasMasinas++;
 							break;
 
 						case "buss":
 							objektuSkripts.skanasAvots.PlayOneShot(
 								objektuSkripts.skanasKoAtskanot[3]);
+								objektuSkripts.NoliktasMasinas++;
 							break;
 
 					case "b2":
 						objektuSkripts.skanasAvots.PlayOneShot(
 							objektuSkripts.skanasKoAtskanot[4]);
+							objektuSkripts.NoliktasMasinas++;
 						break;
 
 					case "CementMasin":
 						objektuSkripts.skanasAvots.PlayOneShot(
 							objektuSkripts.skanasKoAtskanot[5]);
+							objektuSkripts.NoliktasMasinas++;
 						break;
 
 					case "e46":
 						objektuSkripts.skanasAvots.PlayOneShot(
 							objektuSkripts.skanasKoAtskanot[6]);
+							objektuSkripts.NoliktasMasinas++;
 						break;
 
 					case "e61":
 						objektuSkripts.skanasAvots.PlayOneShot(
 							objektuSkripts.skanasKoAtskanot[7]);
+							objektuSkripts.NoliktasMasinas++;
 						break;
 
 					case "Ekskavators":
 						objektuSkripts.skanasAvots.PlayOneShot(
 							objektuSkripts.skanasKoAtskanot[8]);
+							objektuSkripts.NoliktasMasinas++;
 						break;
 
 					case "Policija":
 						objektuSkripts.skanasAvots.PlayOneShot(
 							objektuSkripts.skanasKoAtskanot[9]);
+							objektuSkripts.NoliktasMasinas++;
 						break;
 
 					case "Traktors1":
 						objektuSkripts.skanasAvots.PlayOneShot(
 							objektuSkripts.skanasKoAtskanot[10]);
+							objektuSkripts.NoliktasMasinas++;
 						break;
 
 					case "Traktors5":
 						objektuSkripts.skanasAvots.PlayOneShot(
 							objektuSkripts.skanasKoAtskanot[11]);
+							objektuSkripts.NoliktasMasinas++;
 						break;
 
 					case "Ugunsdzeseji":
 						objektuSkripts.skanasAvots.PlayOneShot(
 							objektuSkripts.skanasKoAtskanot[12]);
+							objektuSkripts.NoliktasMasinas++;
 						break;
 
 						default:

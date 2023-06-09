@@ -8,18 +8,20 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class AinasMainisana : MonoBehaviour {
-	public Objekti objekti;
-	public bool game = false;
+	
+
+	public bool status = false;
 
 
 	//Nokliśḱinot uz pogas "Back" aizvedís uz sákuma ainu.
 	public void Sakums() {
 		SceneManager.LoadScene (0, LoadSceneMode.Single);
+		status = true;
 	}
 	//Noklikśḱinot uz pogas "Start" vai "Restart" aizved uz speles ainu.
 	public void Spele() {
 		SceneManager.LoadScene (1, LoadSceneMode.Single);
-		game = true;
+		status = false;
 	}
 		
 	//Noklikśḱinot uz pogas "Quit" aizver aplikáciju.
