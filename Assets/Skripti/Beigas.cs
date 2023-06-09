@@ -23,7 +23,7 @@ public class Beigas : MonoBehaviour {
 		Debug.Log (time);
 		if (!scene.status)
 			return;
-		if (objekti.NoliktasMasinas >= 1) {
+		if (objekti.NoliktasMasinas >= 12) {
 			scene.status = false;
 			EndScreen.SetActive (true);
 			izkartne.SetActive (true);
